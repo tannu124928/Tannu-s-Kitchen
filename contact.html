@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | Tannu's Kitchen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Specific Styles for Contact Form */
+        .form-container {
+            max-width: 600px; margin: 0 auto;
+            background: #111; padding: 40px; border: 1px solid var(--border);
+        }
+        .form-group { margin-bottom: 20px; }
+        input, select, textarea {
+            width: 100%; padding: 15px; background: #000;
+            border: 1px solid var(--border); color: #fff;
+            font-family: 'Inter', sans-serif;
+        }
+        input:focus, select:focus, textarea:focus { border-color: var(--gold); outline: none; }
+        label { display: block; margin-bottom: 8px; color: var(--gold); font-size: 0.8rem; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">TANNU'S<span>KITCHEN</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="services.html">The Menu</a></li>
+                <li><a href="contact.html" class="active">Reservations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section-padding">
+        <div class="section-title" data-aos="fade-down">
+            <h2>Book a <span class="gold-text">Table</span></h2>
+            <p>Secure your spot for an unforgettable evening.</p>
+        </div>
+
+        <div class="form-container" data-aos="zoom-in">
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label>FULL NAME</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>EMAIL ADDRESS</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>DATE & TIME</label>
+                    <input type="datetime-local" required>
+                </div>
+                <div class="form-group">
+                    <label>GUESTS</label>
+                    <select>
+                        <option>2 Guests</option>
+                        <option>4 Guests</option>
+                        <option>6+ Guests</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">CONFIRM RESERVATION</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Tannu's Kitchen. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

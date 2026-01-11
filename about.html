@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | Tannu's Kitchen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Page-Specific Styles */
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .story-text h3 { font-size: 2rem; color: var(--gold); margin-bottom: 20px; }
+        .story-text p { margin-bottom: 20px; color: var(--text-muted); line-height: 1.8; }
+        .story-img { 
+            width: 100%; height: 500px; 
+            background: #222; /* Fallback */
+            border: 1px solid var(--border);
+            object-fit: cover;
+        }
+        .chef-quote {
+            text-align: center; margin: 80px 0; padding: 60px;
+            background: rgba(255,255,255,0.03); border: 1px solid var(--border);
+        }
+        .chef-quote h4 { font-size: 1.5rem; font-style: italic; color: #fff; margin-bottom: 20px; }
+        .chef-quote span { color: var(--gold); letter-spacing: 2px; font-weight: 700; }
+
+        @media (max-width: 768px) {
+            .story-grid { grid-template-columns: 1fr; }
+            .story-img { height: 300px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="utility-bar">
+        <div class="utility-flex">
+            <span><i class="fas fa-map-pin"></i> 42 Obsidian Avenue, New York</span>
+            <a href="#" class="staff-login"><i class="fas fa-lock"></i> STAFF PORTAL</a>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">TANNU'S<span>KITCHEN</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">Our Story</a></li>
+                <li><a href="services.html">The Menu</a></li>
+                <li><a href="contact.html">Reservations</a></li>
+            </ul>
+            <a href="contact.html" class="nav-btn">BOOK A TABLE</a>
+        </div>
+    </nav>
+
+    <header class="hero" style="height: 60vh;">
+        <div class="hero-content" data-aos="zoom-out">
+            <span class="tagline">ESTABLISHED 2001</span>
+            <h1>Our <span class="gold-text">Legacy</span></h1>
+            <p class="hero-desc">Redefining the art of fine dining through innovation, passion, and obsidian elegance.</p>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="nav-container"> <div class="story-grid">
+                <div class="story-text" data-aos="fade-right">
+                    <h3>The Beginning</h3>
+                    <p>Tannu's Kitchen began with a singular vision: to create a dining space where culinary art meets architectural beauty. Founded in 2001 by Executive Chef Tannu, the restaurant quickly became a sanctuary for food connoisseurs.</p>
+                    <p>We believe that dining is not just about sustenance, but about storytelling. Every dish that leaves our pass tells a story of heritage, sourcing, and meticulous preparation.</p>
+                </div>
+                <div class="story-img-wrapper" data-aos="fade-left">
+                    <img src="images/interior.jpg" alt="Restaurant Interior" class="story-img" onerror="this.style.background='#1a1a1a'">
+                </div>
+            </div>
+
+            <div class="chef-quote" data-aos="fade-up">
+                <i class="fas fa-quote-left" style="color: var(--gold); font-size: 2rem; margin-bottom: 20px;"></i>
+                <h4>"We don't just cook food; we engineer experiences. The plate is our canvas, and the ingredients are our paint."</h4>
+                <span>- CHEF TANNU, FOUNDER</span>
+            </div>
+
+            <div class="story-grid">
+                <div class="story-img-wrapper" data-aos="fade-right">
+                    <img src="images/chef.jpg" alt="Chef Cooking" class="story-img" onerror="this.style.background='#1a1a1a'">
+                </div>
+                <div class="story-text" data-aos="fade-left">
+                    <h3>The Philosophy</h3>
+                    <p>Our philosophy is rooted in "Obsidian Precision." We combine dark, elegant aesthetics with vibrant, explosive flavors. We source our ingredients from local organic farms and sustainable fisheries, ensuring that our impact on the planet is as gentle as our service.</p>
+                    <p>From the moment you step through our doors, you are not just a customer; you are a guest in our home.</p>
+                    <br>
+                    <a href="services.html" class="btn-primary">VIEW OUR MENU</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Tannu's Kitchen. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
